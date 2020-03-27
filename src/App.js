@@ -8,7 +8,7 @@ const App = () => {
   return (
     <Header>
       <h1>Lambda Eats</h1>
-      <p>You can remove this code and create your own header</p>
+      <Question>Are you hungry?</Question>
       {/* my routes are here */}
       <div>
         <Route exact path="/" component={Homepage} />
@@ -20,10 +20,16 @@ const App = () => {
 export default App;
 
 const Header = styled.div`
-  // border: 5px solid red;
-  width: 100%;
+  border: 5px solid black;
+  width: 98%;
+  padding: 5px;
+  margin: 20px;
   display: flex;
   justify-content: center;
-  alignitems: center;
+  align-items: center;
   flex-flow: column wrap;
 `;
+
+const Question = styled.p`
+font-weight: bold;
+`

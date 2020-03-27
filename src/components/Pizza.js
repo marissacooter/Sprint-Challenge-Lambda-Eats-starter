@@ -122,7 +122,7 @@ function Pizza() {
             data-cy="name"
             type="text"
             name="name"
-            placeholder="Name Your Pizza"
+            placeholder="Name For Your Pizza"
             value={formState.name}
             onChange={inputChange}
           />
