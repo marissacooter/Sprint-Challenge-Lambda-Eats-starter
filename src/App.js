@@ -1,4 +1,6 @@
 import React from "react";
+import { Route } from "react-router-dom";
+import Pizza from "./components/Pizza";
 
 const App = () => {
   return (
