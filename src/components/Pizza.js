@@ -13,3 +13,26 @@ const formSchema = yup.object().shape({
 // toppings: yup.string().required("sausage"),
     specInstr: yup.string().required("Add special instructions for your delivery!")
 })
+
+//setting my state for form
+function Pizza() {
+    const [formState, setFormState] = useState({
+      name: "",
+      pizzaSize: "",
+      toppings: [],
+      specInstr: ""
+    });
+}
+
+//setting up state for errors
+const [errors, setErrors] = useState({
+    name: "",
+    pizzaSize: "",
+    toppings: "",
+    specInstr: ""
+  });
+
+//setting up state for disabled button until req fields are filled out
+const [buttonDisabled, setButtonDisabled] = useState(true);
+
+export default Pizza;
